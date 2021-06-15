@@ -1,5 +1,5 @@
 <mat-card>
-  <img [src]="image"/>
+  <img [src]="listaDeImoveis[count]?.image"/>
   <div class="button">
     <button (click)="next()" ><mat-icon>arrow_right</mat-icon></button>
     <button (click)="previous()" ><mat-icon>arrow_left</mat-icon></button>

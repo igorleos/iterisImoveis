@@ -17,6 +17,7 @@ import { ImoveisPageComponent } from './components/imoveis-page/imoveis-page.com
 import { HttpClientModule } from '@angular/common/http'
 import { MatCardModule } from '@angular/material/card';
 import { ImovelCardComponent } from './components/imovel-card/imovel-card.component';
+import { ImovelSlideComponent } from './components/imovel-slide/imovel-slide.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { ImovelCardComponent } from './components/imovel-card/imovel-card.compon
     SobrePageComponent,
     HomePageComponent,
     ImoveisPageComponent,
-    ImovelCardComponent
+    ImovelCardComponent,
+    ImovelSlideComponent
   ],
   imports: [
     BrowserModule,

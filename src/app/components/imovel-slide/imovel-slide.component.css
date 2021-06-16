@@ -10,5 +10,6 @@ img.hidden{
 }
 img.visible{
   overflow: visible;
+  transition:all 3s;
 }
 

@@ -1,7 +1,7 @@
 <mat-card>
-  <div class="imgcontainer" *ngFor="let item of listaDeImoveis">
+  <div class="imgcontainer">
     <img class="hidden" [src]="listaDeImoveis[count-1]?.image"/>
-    <img class="visible" [src]="listaDeImoveis[count]?.image"/>
+    <img class="hidden" [src]="listaDeImoveis[count]?.image"/>
     <img class="hidden" [src]="listaDeImoveis[count+1]?.image"/>
   </div>
 

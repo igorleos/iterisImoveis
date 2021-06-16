@@ -20,7 +20,7 @@ export class ImovelSlideComponent implements OnInit {
       }
     })
   }
-  curImgState:string='';
+  curImgState:string='visible';
   nextImgState:string='';
 
   count:number=0;

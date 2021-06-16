@@ -17,22 +17,18 @@ export class ImovelSlideComponent implements OnInit {
     this.imoveisApi.get().subscribe({
       next: (retornoDaApi)=>{
         this.listaDeImoveis = retornoDaApi;
-
-
       }
-
     })
   }
 
   count:number=0;
-
+  image:string=this.listaDeImoveis[this.count].image;
   next():void {
-    if (this.count<(this.listaDeImoveis.length-1))
+    if (this.count<this.listaDeImoveis.length)
     this.count++;
   }
   previous():void{
-    if (this.count>0)
+    if (this.count>this.listaDeImoveis.length)
     this.count--;
-    console.log(this.count);
   }
 }

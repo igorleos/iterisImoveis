@@ -1,0 +1,14 @@
+.imgcontainer{
+  display: flex;
+}
+img{
+  max-width: 100%;
+}
+img.hidden{
+  overflow: hidden;
+  transition:overflow 3s;
+}
+img.visible{
+  overflow: visible;
+}
+

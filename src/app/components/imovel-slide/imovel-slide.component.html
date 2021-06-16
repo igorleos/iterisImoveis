@@ -1,5 +1,10 @@
 <mat-card>
-  <img [src]="listaDeImoveis[count]?.image"/>
+  <div class="imgcontainer" *ngFor="let item of listaDeImoveis">
+    <img class="hidden" [src]="listaDeImoveis[count-1]?.image"/>
+    <img class="visible" [src]="listaDeImoveis[count]?.image"/>
+    <img class="hidden" [src]="listaDeImoveis[count+1]?.image"/>
+  </div>
+
   <div class="button">
     <button (click)="next()" ><mat-icon>arrow_right</mat-icon></button>
     <button (click)="previous()" ><mat-icon>arrow_left</mat-icon></button>

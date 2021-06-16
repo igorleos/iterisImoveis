@@ -4,12 +4,17 @@
 img{
   max-width: 100%;
 }
-img.hidden{
-  overflow: hidden;
-  transition:overflow 3s;
+
+.imgcontainer{
+  transition:slide ease-in-out;
+
 }
-img.visible{
-  overflow: visible;
-  transition:all 3s;
+.button{
+  display: flex;
+  justify-content: space-between;
+
 }
+
+
+
 

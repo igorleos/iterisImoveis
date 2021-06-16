@@ -1,13 +1,13 @@
 <mat-card>
   <div class="imgcontainer">
-    <img class="hidden" [src]="listaDeImoveis[count-1]?.image"/>
-    <img class="hidden" [src]="listaDeImoveis[count]?.image"/>
-    <img class="hidden" [src]="listaDeImoveis[count+1]?.image"/>
+    <img [class]="curImgState" [src]="listaDeImoveis[count]?.image"/>
+    <img [class]="nextImgState" [src]="listaDeImoveis[count+1]?.image"/>
   </div>
 
   <div class="button">
-    <button (click)="next()" ><mat-icon>arrow_right</mat-icon></button>
     <button (click)="previous()" ><mat-icon>arrow_left</mat-icon></button>
+    <button (click)="next()" ><mat-icon>arrow_right</mat-icon></button>
+
   </div>
 
 </mat-card>

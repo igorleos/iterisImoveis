@@ -20,15 +20,16 @@ export class ImovelSlideComponent implements OnInit {
       }
     })
   }
+  curImgState:string='';
+  nextImgState:string='';
 
   count:number=0;
-  image:string=this.listaDeImoveis[this.count].image;
   next():void {
-    if (this.count<this.listaDeImoveis.length)
+    if (this.count<(this.listaDeImoveis.length-1))
     this.count++;
   }
   previous():void{
-    if (this.count>this.listaDeImoveis.length)
+    if (this.count>0)
     this.count--;
   }
 }

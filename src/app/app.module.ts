@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatTabsModule} from '@angular/material/tabs';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,8 +39,7 @@ import { ImovelSlideComponent } from './components/imovel-slide/imovel-slide.com
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    MatCardModule,
-    MatTabsModule
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
